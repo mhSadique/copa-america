@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+
+:root {
+    --theme: #2D25A0;
+    --button: #E02C6D;
+    --light: #FFFFFF;
+    --dark-text: #18191F;
+    --light-text: #6C6C6C;
+}
+
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* Top Banner */
+
+.top-banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--theme);
+}
+
+.top-banner .header {
+    display: flex;
+    width: 100%;
+}
+
+.top-banner .header div {
+    width: 485px;
+    height: 230px;
+    margin-top: 198px;
+    margin-left: 160px;
+    margin-bottom: 249px;
+}
+
+.top-banner .header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    line-height: 80px;
+    color: var(--light);
+}
+
+.top-banner .header button {
+    background-color: var(--button);
+    border: none;
+    color: var(--light);
+    padding: 10px 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 46px;
+    border-radius: 5px;
+}
+
+.top-banner .header button:hover {
+    background-color: var(--light);
+    color: var(--theme);
+}
+
+
+.top-banner .image img {
+    width: 556px;
+    height: 438px;
+    margin-top: 198px;
+    margin-bottom: 86px;
+}
+
+/* Players Area */
+
+.players {
+    /* width: 1050px; */
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 180px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.players .player-single {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    box-shadow: 0 1px 50px #C0C0C0;
+}
+
+.players .player-single img {
+    width: 300px;
+    height: 256px;
+    margin-bottom: 16px;
+}
+
+.players .player-single .player-info {
+    width: 300px;
+    height: 154px;
+}
+
+.players .player-single h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-text);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.players .player-single p {
+    font-family: 'Poppins', sans-serif;
+    color: var(--light-text);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
