@@ -46,6 +46,11 @@
     font-size: 64px;
     line-height: 80px;
     color: var(--light);
+    transition: font-size 2s;
+}
+
+.top-banner .header h1:hover {
+    font-size: 70px;
 }
 
 .top-banner .header button {
@@ -59,20 +64,26 @@
     line-height: 24px;
     margin-top: 46px;
     border-radius: 5px;
+    transition: padding 1.5s;
 }
 
 .top-banner .header button:hover {
-    background-color: var(--light);
-    color: var(--theme);
+    padding: 10px 34px;
 }
-
 
 .top-banner .image img {
     width: 556px;
     height: 438px;
     margin-top: 198px;
     margin-bottom: 86px;
+    transition: transform 2s;
 }
+
+.top-banner .image img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+
 
 /* Players Area */
 
@@ -332,6 +343,10 @@ footer p {
        line-height: 50px;
    }
 
+   .top-banner .header h1:hover {
+       font-size: 30px;
+   }
+
    .top-banner .image img {
     width: 100%;
     height: auto;
@@ -389,6 +404,10 @@ footer p {
    .top-banner .header h1 {
        font-size: 24px;
        line-height: 50px;
+   }
+
+   .top-banner .header h1:hover {
+       font-size: 30px;
    }
 
    /* Players Area */
